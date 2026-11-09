@@ -1,0 +1,59 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-navy: #0a0059;
+    --color-cream: #fffdf1;
+    --color-accent: #d5d2ca;
+  }
+
+  html {
+    font-family: 'Arimo', system-ui, -apple-system, sans-serif;
+    scroll-behavior: smooth;
+  }
+}
+
+.font-quote {
+  font-family: 'Caveat', cursive;
+}
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fffdf1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #0a005933;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0a005966;
+}
+
+/* Spinner rotation */
+@keyframes spin-step {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-spin-slow {
+  animation: spin-step 16s linear infinite;
+}
+
+.animate-spin-medium {
+  animation: spin-step 6s linear infinite;
+}
+
+.animate-spin-step {
+  animation: spin-step 1.2s steps(12, end) infinite;
+}

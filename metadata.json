@@ -1,0 +1,6 @@
+{
+  "name": "Overthink Agency",
+  "description": "Overthink Agency kurumsal web sitesi - Derin düşünceyi stratejik iletişime dönüştüren, kurum odaklı yaratıcı iletişim ajansı.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
